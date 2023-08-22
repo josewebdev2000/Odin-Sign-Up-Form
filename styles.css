@@ -1,0 +1,210 @@
+/* Imports */
+@import url('https://fonts.cdnfonts.com/css/evil-empire');
+@import url('https://fonts.cdnfonts.com/css/gravity-points');
+
+/* General Styles */
+:root
+{
+    --evil-font: "Evil Empire", sans-serif;
+    --input-font: "Gravity Points", sans-serif;
+    --light-gray: #DBD8E3;
+    --gray: #5C5470;
+    --dark-gray: #352F44;
+    --black-gray: #2A2438;
+    --red: #800020;
+    --blue: #008080;
+    --green: #50C878;
+    --xs: 8px;
+    --s: 16px;
+    --m: 24px;
+    --l: 48px;
+    --xl: 72px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: var(--evil-font);
+    display: grid;
+    background-color: var(--black-gray);
+    grid-template-columns: 0.3fr 0.7fr;
+    height: 100vh;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+aside
+{
+    background-color: var(--light-gray);
+    background-image: url("assets/pics/malevolent-image.png");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+}
+
+section
+{
+    background-color: var(--dark-gray);
+}
+
+.page-link
+{
+    color: var(--light-gray);
+    transition: color 0.3s;
+}
+
+.page-link:hover
+{
+    color: var(--gray);
+}
+
+.page-link:active
+{
+    color: var(--dark-gray);
+}
+
+/* Logo Container */
+.logo-container
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.title-container
+{
+    background-color: var(--black-gray);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 3.87rem;
+}
+
+.title-container > h1
+{
+    font-size: var(--xl);
+}
+
+/* Form Container */
+.form-container
+{
+    color: var(--light-gray);
+    display: grid;
+    grid-template-areas: 
+        "intro"
+        "form"
+        "form"
+        "form"
+        "form"
+        "form"
+        "form"
+        "footer"
+}
+
+.form-intro
+{
+    grid-area: intro;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.form-intro > h1
+{
+    font-size: var(--l);
+}
+
+.form-intro > p
+{
+    font-size: var(--m);
+}
+
+.real-form
+{
+    background-color: var(--black-gray);
+    grid-area: form;
+}
+
+.real-form > form
+{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 100%;
+}
+
+.form-group-1, .form-group-2
+{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group-1 > div, .form-group-2 > div
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form label
+{
+    font-size: var(--m);
+}
+
+form input
+{
+    padding: 3% 1%;
+    border: 4px solid var(--light-gray);
+    border-radius: 10px;
+    font-size: var(--s);
+    font-family: var(--input-font);
+    outline: none;
+}
+
+form input:focus
+{
+    border-color: var(--blue);
+}
+
+
+.form-footer
+{
+    grid-area: footer;
+    font-size: var(--m);
+    padding: 25px;
+}
+
+.btn
+{
+    background-color: var(--light-gray);
+    color: var(--black-gray);
+    font-size: var(--m);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, color 0.3s, scale 0.3s;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    background-color: var(--gray);
+    color: var(--light-gray);
+    scale: 1.1;
+}
+
+.btn:active
+{
+    background-color: var(--dark-gray);
+    scale: 1.2;
+}

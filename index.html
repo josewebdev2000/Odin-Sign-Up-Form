@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Website Icon-->
+    <link rel="icon" href="favicon.ico">
+
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--CSS StyleSheet-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--JS Scripts-->
+    <!--Main JS Script-->
+    <script src="index.js"></script>
+
+    <title>Sign Up Form</title>
+</head>
+<body>
+
+    <aside class="animate__animated animate__slideInLeft logo-container">
+        <div class="animate__animated animate__zoomIn title-container">
+            <h1 class="animate__animated animate__pulse animate__infinite"><a class="page-link" href="#">Malevolent</a></h1>
+        </div>
+    </aside>
+
+    <section class="animate__animated animate__slideInRight form-container">
+        <header class="form-intro">
+            <h1>Where Gaming Gets Wicked</h1>
+
+            <p>Prepare yourself for mature themes, epic battles, and extreme challenges.</p>
+            <p>Experience the world like no other.</p>
+            <p>Are you ready?</p>
+            <p>Sign Up Below</p>
+        </header>
+
+        <article class="real-form">
+            <form>
+                <div class="form-group-1">
+                    <div class="first-name-wrapper">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+
+                    <div class="email-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required>
+                    </div>
+
+                    <div class="password-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                    </div>
+                </div>
+
+                <div class="form-group-2">
+                    <div class="last-name-wrapper">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+
+                    <div class="phone-number-wrapper">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$" required>
+                    </div>
+
+                    <div class="confirm-password-wrapper">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                    </div>
+                </div>
+
+            </form>
+        </article>
+
+        <footer class="form-footer">
+            <button class ="btn" id="sign-up-btn" type="button">Sign Up</button>
+            <p>Already have an account? <a class="page-link" id="login-link" href="#">Log In</a></p>
+        </footer>
+    </section>
+
+</body>
+</html>
