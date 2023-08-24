@@ -83,7 +83,7 @@ section
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    padding: 58px;
+    padding: 6.8vh;
 }
 
 .title-container > h1
