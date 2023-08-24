@@ -11,12 +11,10 @@
     --gray: #5C5470;
     --dark-gray: #352F44;
     --black-gray: #2A2438;
-    --red: #800020;
-    --blue: #008080;
-    --green: #50C878;
     --xs: 8px;
     --s: 16px;
     --m: 24px;
+    --ml: 32px;
     --l: 48px;
     --xl: 72px;
 }
@@ -114,7 +112,7 @@ section
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    padding: 50px;
+    padding: 30px;
 }
 
 .form-intro > h1
@@ -157,7 +155,7 @@ section
 
 form label
 {
-    font-size: var(--m);
+    font-size: var(--ml);
 }
 
 form input
@@ -170,11 +168,18 @@ form input
     outline: none;
 }
 
-form input:focus
+.invalid-feedback
 {
-    border-color: var(--blue);
+    align-self: flex-end;
+    color: #800020;
 }
 
+.invalid-submit-feedback
+{
+    color: #800020;
+    font-size: var(--ml);
+    margin-bottom: 15px;
+}
 
 .form-footer
 {
@@ -207,4 +212,9 @@ form input:focus
 {
     background-color: var(--dark-gray);
     scale: 1.2;
+}
+
+a#hidden-link
+{
+    display: none;
 }

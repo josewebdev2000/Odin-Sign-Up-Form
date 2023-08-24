@@ -7,7 +7,7 @@
     <!--Website Icon-->
     <link rel="icon" href="favicon.ico">
 
-    <!--Animate CSS-->
+    <!--Animate CSS CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!--CSS StyleSheet-->
@@ -47,12 +47,12 @@
 
                     <div class="email-wrapper">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="password-wrapper">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                        <input type="password" id="password" name="password" required>
                     </div>
                 </div>
 
@@ -64,21 +64,21 @@
 
                     <div class="phone-number-wrapper">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number" pattern="^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$" required>
+                        <input type="tel" id="phone-number" name="phone-number" required>
                     </div>
 
                     <div class="confirm-password-wrapper">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
                 </div>
-
             </form>
         </article>
 
         <footer class="form-footer">
             <button class ="btn" id="sign-up-btn" type="button">Sign Up</button>
             <p>Already have an account? <a class="page-link" id="login-link" href="#">Log In</a></p>
+            <a id="hidden-link" href="pages/success.html"></a>
         </footer>
     </section>
 

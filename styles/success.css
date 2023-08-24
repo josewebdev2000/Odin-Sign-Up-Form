@@ -1,0 +1,109 @@
+/* Imports */
+@import url('https://fonts.cdnfonts.com/css/evil-empire');
+@import url('https://fonts.cdnfonts.com/css/gravity-points');
+
+/* General Styles */
+
+:root
+{
+    --evil-font: "Evil Empire", sans-serif;
+    --input-font: "Gravity Points", sans-serif;
+    --light-gray: #DBD8E3;
+    --gray: #5C5470;
+    --dark-gray: #352F44;
+    --black-gray: #2A2438;
+    --xs: 8px;
+    --s: 16px;
+    --m: 24px;
+    --ml: 32px;
+    --l: 48px;
+    --xl: 72px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: var(--evil-font);
+    display: grid;
+    background-color: var(--black-gray);
+    grid-template-columns: 0.3fr 0.7fr;
+    height: 100vh;
+}
+
+aside
+{
+    background-color: var(--light-gray);
+    background-image: url("../assets/pics/malevolent-image.png");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+section
+{
+    background-color: var(--dark-gray);
+}
+
+.page-link
+{
+    color: var(--light-gray);
+    transition: color 0.3s;
+}
+
+.page-link:hover
+{
+    color: var(--gray);
+}
+
+.page-link:active
+{
+    color: var(--dark-gray);
+}
+
+/* Logo Container */
+.logo-container
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.title-container
+{
+    background-color: var(--black-gray);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 3.87rem;
+}
+
+.title-container > h1
+{
+    font-size: var(--xl);
+}
+
+/*Section Container*/
+header
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1
+{
+    color: var(--light-gray);
+    font-size: var(--xl);
+}
