@@ -46,6 +46,7 @@ aside
     background-image: url("assets/pics/malevolent-image.png");
     background-repeat: no-repeat;
     background-position: 50% 5%;
+    background-size: 75vh;
 }
 
 section
